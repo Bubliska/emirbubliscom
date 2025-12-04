@@ -1,4 +1,6 @@
 {
+  "buildCommand": "",
+  "outputDirectory": ".",
   "rewrites": [
     {
       "source": "/contact",
@@ -13,19 +15,21 @@
       "destination": "/works.html"
     },
     {
-      "source": "/",
+      "source": "/index",
       "destination": "/index.html"
     }
   ],
-  "headers": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*\\.html)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
