@@ -1,31 +1,39 @@
 {
-  "buildCommand": "",
-  "outputDirectory": ".",
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/contact",
-      "destination": "/contact.html"
-    },
-    {
-      "source": "/who-am-i",
-      "destination": "/who-am-i.html"
-    },
-    {
-      "source": "/works",
-      "destination": "/works.html"
-    },
-    {
-      "source": "/index",
-      "destination": "/index.html"
+      "src": "**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "handle": "filesystem"
+      "src": "/contact.html",
+      "dest": "/contact.html"
     },
     {
-      "src": "/(.*\\.html)",
-      "dest": "/$1"
+      "src": "/who-am-i.html",
+      "dest": "/who-am-i.html"
+    },
+    {
+      "src": "/works.html",
+      "dest": "/works.html"
+    },
+    {
+      "src": "/index.html",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/contact.html"
+    },
+    {
+      "src": "/who-am-i",
+      "dest": "/who-am-i.html"
+    },
+    {
+      "src": "/works",
+      "dest": "/works.html"
     },
     {
       "src": "/(.*)",
