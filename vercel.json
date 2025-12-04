@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "echo 'No build needed'",
+  "buildCommand": "",
   "outputDirectory": ".",
   "installCommand": "",
   "framework": null,
@@ -16,12 +16,6 @@
     {
       "source": "/works",
       "destination": "/works.html"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
     }
   ]
 }
