@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Am I - Director Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* keep vertical scrollbar always visible to avoid layout shifts */
+        html { overflow-y: scroll; scrollbar-gutter: stable; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+        
+        /* Don't change font metrics when switching active state to avoid horizontal movement */
+        .nav-link.active { opacity: 1; }
+        .nav-link { opacity: 0.6; }
+        
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .animate-fade-in { animation: fadeIn 0.8s ease-in-out; }
+    </style>
+</head>
+<body class="bg-black text-white font-sans antialiased overflow-x-hidden selection:bg-white selection:text-black">
+
+    <!-- NAVİGASYON -->
+    <nav class="fixed top-12 left-0 w-full flex gap-10 justify-center z-50 pointer-events-none">
+        <a href="index.html" class="nav-link text-white no-underline text-[13px] tracking-[1px] font-light transition-opacity duration-300 hover:opacity-100 uppercase pointer-events-auto">Home</a>
+        <a href="who-am-i.html" class="nav-link active text-white no-underline text-[13px] tracking-[1px] font-light transition-opacity duration-300 hover:opacity-100 uppercase pointer-events-auto">Who Am I?</a>
+        <a href="works.html" class="nav-link text-white no-underline text-[13px] tracking-[1px] font-light transition-opacity duration-300 hover:opacity-100 uppercase pointer-events-auto">Works</a>
+        <a href="contact.html" class="nav-link text-white no-underline text-[13px] tracking-[1px] font-light transition-opacity duration-300 hover:opacity-100 uppercase pointer-events-auto">Contact</a>
+    </nav>
+
+    <!-- İÇERİK -->
+    <div class="min-h-screen justify-center pt-32 pb-12 px-6 animate-fade-in flex">
+        <div class="grid md:grid-cols-[220px_1fr] gap-12 items-start max-w-[900px] w-full">
+            <!-- Profil Resmi: kendi fotoğrafınızı `assets/your-photo.jpg` olarak ekleyin -->
+            <div 
+                class="w-full aspect-[3/4] bg-[#333] bg-cover bg-center"
+                style="background-image: url('./assets/emirwhoami.jpg');"
+                aria-label="Profil resmi"
+            ></div>
+            
+            <!-- Biyografi Metinleri -->
+            <div class="text-white">
+                <h1 class="text-2xl mb-5 font-light">Emir Bublis</h1>
+                
+                <p class="text-[13px] leading-[1.6] opacity-90 mb-4 font-light text-neutral-300">
+                    Emir Bublis was born in Izmir in 1989. Turning his passion for cinema, which began at the age of 7, into a career, Emir initially wrote stories for TV projects and worked as a script doctor. His professional career began in 2015 as a jury member on the script evaluation committee for the TRT TV Films Competition.
+                </p>
+                <p class="text-[13px] leading-[1.6] opacity-90 mb-4 font-light text-neutral-300">
+                    Emir's first project was the 24-episode animated series Erdem, which he wrote and directed for TRT Çocuk between 2015 and 2017. In 2018, he wrote and directed the 30-episode short animated series Ramazan Güncesi, also for TRT Çocuk. The same year, he served as a script consultant on the animated project Dumper and Skoop. The series was broadcast on MinikaGO and on China's iQiyi video platform.
+                </p>
+                <p class="text-[13px] leading-[1.6] opacity-90 mb-4 font-light text-neutral-300">
+                    Emir's first feature film screenwriting credit was for the theatrical release Müfreze. He then wrote and directed his first English-language feature film, Spiralis. The film reached the semi-finals in a competition in Sweden and was released in the United States on Amazon Prime, Tubi TV, and Cineverse. Most recently, in 2022, he wrote and directed the 7-episode series Queen of the Seven, starring many famous Turkish actors.
+                </p>
+                <p class="text-[13px] leading-[1.6] opacity-90 mb-4 font-light text-neutral-300">
+                    Emir is currently working on his new thriller film project, Unethical Masterpiece.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Director Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* keep vertical scrollbar always visible to avoid layout shifts */
+        html { overflow-y: scroll; scrollbar-gutter: stable; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+        
+        /* Don't change font metrics when switching active state to avoid horizontal movement */
+        .nav-link.active { opacity: 1; }
+        .nav-link { opacity: 0.6; }
+        
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .animate-fade-in { animation: fadeIn 0.8s ease-in-out; }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-black text-white font-sans antialiased overflow-x-hidden selection:bg-white selection:text-black">
+
+    <!-- NAVİGASYON -->
+    <nav class="fixed top-12 left-0 w-full flex gap-10 justify-center z-50 pointer-events-none">
+        <a href="index.html" class="nav-link active text-white no-underline text-[13px] tracking-[1px] font-light transition-opacity duration-300 hover:opacity-100 uppercase pointer-events-auto">Home</a>
+        <a href="who-am-i.html" class="nav-link text-white no-underline text-[13px] tracking-[1px] font-light transition-opacity duration-300 hover:opacity-100 uppercase pointer-events-auto">Who Am I?</a>
+        <a href="works.html" class="nav-link text-white no-underline text-[13px] tracking-[1px] font-light transition-opacity duration-300 hover:opacity-100 uppercase pointer-events-auto">Works</a>
+        <a href="contact.html" class="nav-link text-white no-underline text-[13px] tracking-[1px] font-light transition-opacity duration-300 hover:opacity-100 uppercase pointer-events-auto">Contact</a>
+    </nav>
+
+    <!-- İÇERİK -->
+    <div class="min-h-screen flex flex-col items-center pt-40 animate-fade-in">
+        <!-- Profil Resmi: Emir-Bublis.png -->
+        <img 
+            src="./assets/Emir-Bublis.png"
+            alt="Profil resmi"
+            style="width: 30%; height: auto;"
+        />
+    </div>
+
+</body>
+</html>

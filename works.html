@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works - Director Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* keep vertical scrollbar always visible to avoid layout shifts */
+        html { overflow-y: scroll; scrollbar-gutter: stable; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+        
+        /* Don't change font metrics when switching active state to avoid horizontal movement */
+        .nav-link.active { opacity: 1; }
+        .nav-link { opacity: 0.6; }
+        
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .animate-fade-in { animation: fadeIn 0.8s ease-in-out; }
+    </style>
+</head>
+<body class="bg-black text-white font-sans antialiased overflow-x-hidden selection:bg-white selection:text-black">
+
+    <!-- NAVİGASYON -->
+    <nav class="fixed top-12 left-0 w-full flex gap-10 justify-center z-50 pointer-events-none">
+        <a href="index.html" class="nav-link text-white no-underline text-[13px] tracking-[1px] font-light transition-opacity duration-300 hover:opacity-100 uppercase pointer-events-auto">Home</a>
+        <a href="who-am-i.html" class="nav-link text-white no-underline text-[13px] tracking-[1px] font-light transition-opacity duration-300 hover:opacity-100 uppercase pointer-events-auto">Who Am I?</a>
+        <a href="works.html" class="nav-link active text-white no-underline text-[13px] tracking-[1px] font-light transition-opacity duration-300 hover:opacity-100 uppercase pointer-events-auto">Works</a>
+        <a href="contact.html" class="nav-link text-white no-underline text-[13px] tracking-[1px] font-light transition-opacity duration-300 hover:opacity-100 uppercase pointer-events-auto">Contact</a>
+    </nav>
+
+    <!-- İÇERİK -->
+    <div class="min-h-screen justify-center pt-32 pb-20 px-6 animate-fade-in flex">
+        <div class="grid gap-12 max-w-[1000px] w-full">
+            
+            <!-- FILM 6 -->
+            <div class="grid md:grid-cols-[280px_1fr] gap-9 items-start group">
+                <div class="w-full aspect-[2/3] bg-[#222] relative overflow-hidden">
+                    <img src="./assets/posters/Um.png" alt="Unethical Masterpiece" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0">
+                </div>
+                <div class="pt-2">
+                    <h2 class="text-lg mb-4 font-normal tracking-wide">Unethical Masterpiece (In Development)</h2>
+                    <p class="text-[12px] opacity-80 mb-3 text-neutral-400">Writer &amp; Director</p>
+                    <p class="text-[12px] leading-[1.6] opacity-90 mb-3 text-neutral-300 font-light">
+                        Anna can't succeed as a writer, so after meeting a serial killer through her editing job, she makes a secret deal with him and decides to use his murders to become famous.
+                    </p>
+                    <p class="text-[12px] leading-[1.6] opacity-80 mb-3 text-neutral-400 italic">
+                        Feature Film 120' Crime Thriller
+                    </p>
+                    <a href="#" data-trailer="UM_ID" class="watch-trailer inline-block text-white no-underline border border-white px-5 py-2 mt-2 text-[11px] tracking-[0.5px] transition-all duration-300 hover:bg-white hover:text-black cursor-pointer">WATCH TRAILER</a>
+                </div>
+            </div>
+            
+            <!-- FILM 5 -->
+            <div class="grid md:grid-cols-[280px_1fr] gap-9 items-start group">
+                <div class="w-full aspect-[2/3] bg-[#222] relative overflow-hidden">
+                    <img src="./assets/posters/yedi.png" alt="Queen of the Seven" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0">
+                </div>
+                <div class="pt-2">
+                    <h2 class="text-lg mb-4 font-normal tracking-wide">Queen of the Seven (2023 - Unreleased)</h2>
+                    <p class="text-[12px] opacity-80 mb-3 text-neutral-400">Writer &amp; Director</p>
+                    <p class="text-[12px] leading-[1.6] opacity-90 mb-3 text-neutral-300 font-light">
+                        A loyal agent is tasked with rooting out a corrupt council composed of the Seven Deadly Sins. But when she discovers her commander has a secret plan to seize power, she finds herself in a dark, comedic, and action-packed fight for justice built on betrayal and survival.
+                    </p>
+                    <p class="text-[12px] leading-[1.6] opacity-80 mb-3 text-neutral-400 italic">
+                        Mini Series 7x20’ / Dark Comedy & Action-Crime
+                    </p>
+                    <a href="#" data-trailer="im65BRZWFlg" class="watch-trailer inline-block text-white no-underline border border-white px-5 py-2 mt-2 text-[11px] tracking-[0.5px] transition-all duration-300 hover:bg-white hover:text-black cursor-pointer">WATCH TRAILER</a>
+                </div>
+            </div>
+
+            <!-- FILM 4 -->
+            <div class="grid md:grid-cols-[280px_1fr] gap-9 items-start group">
+                <div class="w-full aspect-[2/3] bg-[#222] relative overflow-hidden">
+                    <img src="./assets/posters/mannu.jpg" alt="Mannu" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0">
+                </div>
+                <div class="pt-2">
+                    <h2 class="text-lg mb-4 font-normal tracking-wide">Mannu (2023)</h2>
+                    <p class="text-[12px] opacity-80 mb-3 text-neutral-400">Screenplay by</p>
+                    <p class="text-[12px] leading-[1.6] opacity-90 mb-3 text-neutral-300 font-light">
+                        Little Koala Mannu learns that his owner, William, is going to Turkey to deliver his grandfather's medallion, and he secretly hides in his bag and they travel together.
+                    </p>
+                    <p class="text-[12px] leading-[1.6] opacity-80 mb-3 text-neutral-400 italic">
+                        Feature Film 81' Animation & Adventure
+                    </p>
+                    <a href="#" data-trailer="khY8Oki44j4" class="watch-trailer inline-block text-white no-underline border border-white px-5 py-2 mt-2 text-[11px] tracking-[0.5px] transition-all duration-300 hover:bg-white hover:text-black cursor-pointer">WATCH TRAILER</a>
+                </div>
+            </div>
+
+            <!-- FILM 3 -->
+            <div class="grid md:grid-cols-[280px_1fr] gap-9 items-start group">
+                <div class="w-full aspect-[2/3] bg-[#222] relative overflow-hidden">
+                    <img src="./assets/posters/mufreze.png" alt="Müfreze" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0">
+                </div>
+                <div class="pt-2">
+                    <h2 class="text-lg mb-4 font-normal tracking-wide">Müfreze (2021)</h2>
+                    <p class="text-[12px] opacity-80 mb-3 text-neutral-400">Written by</p>
+                    <p class="text-[12px] leading-[1.6] opacity-90 mb-3 text-neutral-300 font-light">
+                        A platoon of soldiers in the 90s, during the peak of terrorism escort a doctor to a village suffering from an epidemic. The village is then raided by terrorists and the soldiers are forced to protect the doctor and a sick little girl.
+                    </p>
+                    <p class="text-[12px] leading-[1.6] opacity-80 mb-3 text-neutral-400 italic">
+                        Feature Film 95' War & Drama
+                    </p>
+                    <a href="#" data-trailer="lWOVxCrgIYA" class="watch-trailer inline-block text-white no-underline border border-white px-5 py-2 mt-2 text-[11px] tracking-[0.5px] transition-all duration-300 hover:bg-white hover:text-black cursor-pointer">WATCH TRAILER</a>
+                </div>
+            </div>
+
+            <!-- FILM 2 -->
+            <div class="grid md:grid-cols-[280px_1fr] gap-9 items-start group">
+                <div class="w-full aspect-[2/3] bg-[#222] relative overflow-hidden">
+                    <img src="./assets/posters/spiralis.jpg" alt="Spiralis" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0">
+                </div>
+                <div class="pt-2">
+                    <h2 class="text-lg mb-4 font-normal tracking-wide">Spiralis (2019)</h2>
+                    <p class="text-[12px] opacity-80 mb-3 text-neutral-400">Writer &amp; Director</p>
+                    <p class="text-[12px] leading-[1.6] opacity-90 mb-3 text-neutral-300 font-light">
+                        A computer programmer who uses his mind palace as a hard drive, loses the most important data in there. He should find it.
+                    </p>
+                    <p class="text-[12px] leading-[1.6] opacity-80 mb-3 text-neutral-400 italic">
+                        Feature Film 90' Psychological & Mystery
+                    </p>
+                    <a href="#" data-trailer="nwkBASN44wc" class="watch-trailer inline-block text-white no-underline border border-white px-5 py-2 mt-2 text-[11px] tracking-[0.5px] transition-all duration-300 hover:bg-white hover:text-black cursor-pointer">WATCH TRAILER</a>
+                </div>
+            </div>
+
+            <!-- FILM 1 -->
+            <div class="grid md:grid-cols-[280px_1fr] gap-9 items-start group">
+                <div class="w-full aspect-[2/3] bg-[#222] relative overflow-hidden">
+                    <img src="./assets/posters/erdem.jpg" alt="Erdem" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0">
+                </div>
+                <div class="pt-2">
+                    <h2 class="text-lg mb-4 font-normal tracking-wide">Erdem: The Little Treasures Bookstore (2018)</h2>
+                    <p class="text-[12px] opacity-80 mb-3 text-neutral-400">Writer &amp; Director</p>
+                    <p class="text-[12px] leading-[1.6] opacity-90 mb-3 text-neutral-300 font-light">
+                        Erdem and his best friend duck discover that the books they read can take them to new worlds in a bookstore called "The Little Treasures Shop," where his father takes them on a day when there is no excitement left in their lives. Zepi and Kurtçuk will also accompany them on this adventure.
+                    </p>
+                    <p class="text-[12px] leading-[1.6] opacity-80 mb-3 text-neutral-400 italic">
+                        Tv Series 24x12' / Action Adventure Mystery
+                    </p>
+                    <a href="#" data-trailer="8yy4U0yREmA" class="watch-trailer inline-block text-white no-underline border border-white px-5 py-2 mt-2 text-[11px] tracking-[0.5px] transition-all duration-300 hover:bg-white hover:text-black cursor-pointer">WATCH TRAILER</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+<div id="trailer-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 px-4">
+        <div class="relative w-full" style="max-width:1200px; width:95vw;">
+                <button id="trailer-close" aria-label="Close trailer" class="absolute -top-10 right-0 text-white bg-black/50 px-3 py-2 rounded">Close ✕</button>
+                <div style="width:100%; aspect-ratio:16/9; background:#000;">
+                        <iframe id="trailer-iframe" class="w-full h-full" src="" title="Trailer player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="display:block;"></iframe>
+                </div>
+        </div>
+</div>
+
+<script>
+// Trailer modal functionality
+(function(){
+    const modal = document.getElementById('trailer-modal');
+    const iframe = document.getElementById('trailer-iframe');
+    const closeBtn = document.getElementById('trailer-close');
+
+    function openTrailer(id){
+        if(!id) return;
+        iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeTrailer(){
+        iframe.src = '';
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.watch-trailer').forEach(btn=>{
+        btn.addEventListener('click', function(e){
+            e.preventDefault();
+            const id = this.getAttribute('data-trailer');
+            openTrailer(id);
+        });
+    });
+
+    closeBtn.addEventListener('click', closeTrailer);
+    modal.addEventListener('click', function(e){
+        if(e.target === modal) closeTrailer();
+    });
+    document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape') closeTrailer();
+    });
+})();
+</script>
