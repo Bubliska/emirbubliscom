@@ -17,6 +17,12 @@
       "source": "/works",
       "destination": "/works.html"
     }
+  ],
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    }
   ]
 }
 
